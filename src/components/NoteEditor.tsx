@@ -20,7 +20,10 @@ export function NoteEditor({ note, onSave, onClose }: NoteEditorProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSave({ title, content });
+    onSave({
+      title, content,
+      isPinned: false
+    });
     setTitle('');
     setContent('');
   };

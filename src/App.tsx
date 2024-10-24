@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Plus, Moon, Sun, Monitor } from 'lucide-react';
 import Swal from 'sweetalert2';
 import type { Note } from './types';
