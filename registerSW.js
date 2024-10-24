@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/NoteApp-React/sw.js', { scope: '/NoteApp-React/' })})}
