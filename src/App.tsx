@@ -78,9 +78,16 @@ function App() {
   };
 
   const cycleTheme = () => {
-    setTheme(
-      theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light'
-    );
+    if (isSystemTheme) {
+      setTheme('light');
+    } else if (theme === 'light') {
+      setTheme('dark');
+    } else if (theme === 'dark') {
+      setTheme('system');
+    } 
+    else {
+      setTheme('system');
+    }
   };
 
   const getThemeIcon = () => {
