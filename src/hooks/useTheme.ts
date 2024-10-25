@@ -58,6 +58,6 @@ export function useTheme() {
   return {
     theme,
     setTheme: setThemeWithStorage,
-    isSystemTheme: !localStorage.getItem('theme'),
+    isSystemTheme: !localStorage.getItem('theme') || localStorage.getItem('theme') === 'system',
   };
 }
