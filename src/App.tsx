@@ -105,13 +105,13 @@ function App() {
         <header className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-white">Notes</h1>
           <div className="flex gap-4">
-            <button
+            {/* <button
               onClick={cycleTheme}
               className="p-2 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white shadow-md hover:shadow-lg transition-shadow"
               title={isSystemTheme ? 'System theme' : `${theme.charAt(0).toUpperCase() + theme.slice(1)} theme`}
             >
               {getThemeIcon()}
-            </button>
+            </button> */}
             <button
               onClick={() => setIsEditorOpen(true)}
               className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
