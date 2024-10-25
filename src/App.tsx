@@ -83,9 +83,8 @@ function App() {
     } else if (theme === 'light') {
       setTheme('dark');
     } else if (theme === 'dark') {
-      setTheme('system');
-    } 
-    else {
+      setTheme('light');
+    } else {
       setTheme('system');
     }
   };
