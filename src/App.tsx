@@ -79,11 +79,13 @@ function App() {
 
   const cycleTheme = () => {
     if (isSystemTheme) {
-      setTheme('light');
-    } else if (theme === 'light') {
+      setTheme('system');
+    } else if (theme === 'system') {
       setTheme('dark');
     } else if (theme === 'dark') {
       setTheme('light');
+    } else if (theme === 'light') {
+      setTheme('system');
     } else {
       setTheme('system');
     }
