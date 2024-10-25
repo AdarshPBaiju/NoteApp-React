@@ -7,4 +7,4 @@ export interface Note {
   isPinned: boolean;
 }
 
-export type Theme = 'light' | 'dark' | 'system';
+export type Theme = 'light' | 'dark';
